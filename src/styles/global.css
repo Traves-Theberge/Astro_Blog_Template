@@ -5,10 +5,9 @@
  */
 
 :root {
-	--primary: #ffffff;
 	--accent: #6345e7;
 	--accent-dark: #8c94df;
-	--white: 255, 255, 255;
+	--white: #ffffff;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -61,11 +60,12 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-
 	line-height: 1.2;
+	color: rgb(var(--black));
 }
 h1 {
 	font-size: 3.052em;
+	color: rgb(var(--black));
 }
 h2 {
 	font-size: 2.441em;
