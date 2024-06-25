@@ -6,7 +6,7 @@
 
 :root {
 	--accent: #572af8;
-	--accent-dark: #ee0909;
+	--accent-dark: #615252;
 	--white: #ffffff;
 	--black: #000000;
 	--gray: 96, 115, 159;
@@ -99,6 +99,9 @@ a {
 }
 a:hover {
 	color: var(--accent);
+}
+.dark a:hover {
+	color: var(--accent-dark); /* Change color to dark accent in dark mode */
 }
 p {
 	margin-bottom: 1em;
