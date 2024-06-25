@@ -5,10 +5,10 @@
  */
 
 :root {
-	--accent: #6345e7;
-	--accent-dark: #8c94df;
+	--accent: #572af8;
+	--accent-dark: #ee0909;
 	--white: #ffffff;
-	--black: 15, 18, 25;
+	--black: #000000;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
 	--gray-dark: 34, 41, 57;
@@ -53,6 +53,15 @@ html.dark {
   .dark .nav-links a {
 	color: #ffffff;
   }
+nav a {
+	padding: 1em 0.5em;
+	color: var(--black);
+	border-bottom: 4px solid transparent;
+	text-decoration: none;
+}
+.dark nav a {
+    color: var(--white); /* Change color to white in dark mode */
+}
 h1,
 h2,
 h3,
@@ -61,11 +70,10 @@ h5,
 h6 {
 	margin: 0 0 0.5rem 0;
 	line-height: 1.2;
-	color: rgb(var(--black));
+
 }
 h1 {
 	font-size: 3.052em;
-	color: rgb(var(--black));
 }
 h2 {
 	font-size: 2.441em;
@@ -84,7 +92,10 @@ b {
 	font-weight: 700;
 }
 a {
-	color: var(--accent);
+	color: var(--black);
+}
+.dark a {
+	color: var(--white); /* Change color to white in dark mode */
 }
 a:hover {
 	color: var(--accent);
@@ -113,6 +124,7 @@ img {
 code {
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-light));
+	color: var(--black);
 	border-radius: 2px;
 }
 pre {
@@ -141,7 +153,11 @@ hr {
 		padding: 1em;
 	}
 }
-
+.title {
+	margin: 0;
+	color: rgb(var(--black));
+	line-height: 1;
+}
 .sr-only {
 	border: 0;
 	padding: 0;

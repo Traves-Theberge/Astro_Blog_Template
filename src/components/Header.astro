@@ -38,27 +38,22 @@ import ThemeIcon from './ThemeIcon.astro';
 		margin: 0;
 		font-size: 1em;
 	}
-
 	h2 a,
 	h2 a.active {
 		text-decoration: none;
-		color: var(--gray);
 	}
 	nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
 	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-	}
+    text-decoration: none;
+}
+	.dark nav a.active {
+    border-bottom-color: var(--black); /* Dark mode color */
+    color: var(--white); /* Dark mode color */
+}
 	.social-links,
 	.social-links a {
 		display: flex;
