@@ -31,3 +31,13 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+
+## TO DO
+
+-Update Images for blog posts.
+-Add tagging system to blog posts
+-Add search function on blog posts
+-Set Limts to the amout of blogs shown.
+-add Tina support ( CMS ).
+-add Key protection.
