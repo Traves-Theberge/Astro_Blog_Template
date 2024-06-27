@@ -1,9 +1,16 @@
 ---
+// Comments //
+/* This file is a header component that is used to render the header of the website.
+It contains the site title, navigation links, and social media links. */
+//imports
+// The HeaderLink component is imported from the components folder. //
 import HeaderLink from './HeaderLink.astro';
+// The SITE_TITLE constant is imported from the consts file. //
 import { SITE_TITLE } from '../consts';
+// The ThemeIcon component is imported from the components folder. //
 import ThemeIcon from './ThemeIcon.astro';
 ---
-
+<!-- The HeaderLink, SITE_TITLE, and ThemeIcon components are rendered. -->
 <header>
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>

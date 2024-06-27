@@ -1,7 +1,19 @@
 ---
+// Comments //
+/* This file is used to render the blog post pages. It uses the 
+BlogPost layout and the Content component to render the post content */
+
+/*imports the CollectionEntry type and the getCollection function from 'astro:content'.
+The getStaticPaths function is an async function that fetches the blog collection and 
+maps over each post to return an object with the params and props properties.
+The props property is the post object. */
 import { type CollectionEntry, getCollection } from 'astro:content';
+//imports the BlogPost layout component. //
 import BlogPost from '../../layouts/BlogPost.astro';
 
+/* exports the getStaticPaths function. This function fetches the blog collection
+and maps over each post to return an object with the params and props properties. 
+The props property is the post object. */
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
 	return posts.map((post) => ({
@@ -9,12 +21,18 @@ export async function getStaticPaths() {
 		props: post,
 	}));
 }
+//type Props is the CollectionEntry type with the 'blog' type. //
 type Props = CollectionEntry<'blog'>;
 
+/*const post is the post object. The Content component is imported from the post object
+ and rendered. */
 const post = Astro.props;
+//const Content is the post object's Content component. //
 const { Content } = await post.render();
 ---
-
+<!-- The BlogPost layout component is imported. The post object is
+  rendered with the BlogPost layout and the Content component. -->
 <BlogPost {...post.data}>
+	// The Content component is rendered. //
 	<Content />
 </BlogPost>

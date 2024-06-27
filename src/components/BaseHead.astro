@@ -1,16 +1,22 @@
 ---
+// Comments //
+/* This file is a component that is used to define the head of the HTML document. */
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
-
+// interface is used to define the shape of the Props object.
+// The Props object has three properties: title, description, and image.
 interface Props {
 	title: string;
 	description: string;
 	image?: string;
 }
 
+/* const cononicalURL is a new URL object that is
+created with the Astro.url.pathname and Astro.site properties. */
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
+/* The title, description, and image properties are extracted from the Astro object */
 const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 ---
 

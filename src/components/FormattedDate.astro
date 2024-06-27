@@ -1,11 +1,16 @@
 ---
+// Comments //
+/* This file is a component that formats the date. It is used to format the date
+of the blog posts. */
+// interface is used to define the shape of the Props object.
+// The Props object has one property: date.
 interface Props {
 	date: Date;
 }
-
+// const date is the date property extracted from the Astro object.
 const { date } = Astro.props;
 ---
-
+<!-- The date is formatted using the toLocaleDateString method. -->
 <time datetime={date.toISOString()}>
 	{
 		date.toLocaleDateString('en-us', {

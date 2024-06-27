@@ -1,13 +1,21 @@
 ---
+// Comments //
+/* This file is used to render the About Me page. It uses the BaseHead, Header, 
+and Footer components to render the page content. */
+//imports
+// The BaseHead component is imported from the components folder. //
 import BaseHead from '../components/BaseHead.astro';
+// The Header component is imported from the components folder. //
 import Header from '../components/Header.astro';
+// The Footer component is imported from the components folder. //
 import Footer from '../components/Footer.astro';
+// The SITE_TITLE and SITE_DESCRIPTION constants are imported from the consts file. //
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
-
 <!doctype html>
 <html lang="en">
 	<head>
+		<!-- The BaseHead component is rendered with the SITE_TITLE and SITE DESCRIPTION -->
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>

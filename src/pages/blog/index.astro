@@ -1,11 +1,24 @@
 ---
+// Comments //
+/* This file is used to render the blog post pages. It uses the BlogPost layout and
+ the Content component to render the post content */
+
+//imports
+// The BaseHead component is imported from the components folder. // 
 import BaseHead from '../../components/BaseHead.astro';
+// The Header component is imported from the components folder. //
 import Header from '../../components/Header.astro';
+// The Footer component is imported from the components folder. //
 import Footer from '../../components/Footer.astro';
+// The SITE_TITLE and SITE_DESCRIPTION constants are imported from the consts file. //
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+// The getCollection function is imported from 'astro:content'. //
 import { getCollection } from 'astro:content';
+// The FormattedDate component is imported from the components folder. //
 import FormattedDate from '../../components/FormattedDate.astro';
 
+/*const posts is an array of blog posts. The getCollection function is used to fetch
+the blog collection */ 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
@@ -14,6 +27,8 @@ const posts = (await getCollection('blog')).sort(
 <!doctype html>
 <html lang="en">
 	<head>
+		<!-- The BaseHead component is rendered with the SITE_TITLE
+		and SITE_DESCRIPTION properties. -->
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			main {

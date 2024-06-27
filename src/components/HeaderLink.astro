@@ -1,16 +1,27 @@
 ---
+// Comments //
+/* This file is a component that renders a link in the header. It is used to render
+links in the header of the blog. */
 
+//imports
+// The HTMLAttributes type is imported from 'astro/types'. //
 import type { HTMLAttributes } from 'astro/types';
-
+// type Props is the HTMLAttributes type with the 'a' type. //
 type Props = HTMLAttributes<'a'>;
-
+/* The href and class properties are extracted from the Astro object and assigned to the
+href and className variables. */
 const { href, class: className, ...props } = Astro.props;
-
+/* The pathname property is extracted from the Astro.url object and assigned to the
+pathname variable. */
 const { pathname } = Astro.url;
+/*  The subpath variable is assigned the result of the match method
+applied to the pathname variable. */ 
 const subpath = pathname.match(/[^\/]+/g);
+/* The isActive variable is assigned a boolean value
+based on the comparison of the href and pathname variables. */
 const isActive = href === pathname || href === '/' + subpath?.[0];
 ---
-
+<!-- The link is rendered with the href, class, and props properties. -->
 <a href={href} class:list={[className, { active: isActive }]} {...props}>
 	<slot />
 </a>

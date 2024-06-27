@@ -1,17 +1,28 @@
 ---
+// Comments //
+/* This file is a layout component for blog posts. It will be used to render individual
+blog posts. */
+//imports
+// imports the CollectionEntry type from 'astro:content'. //
 import type { CollectionEntry } from 'astro:content';
+/* The BaseHead, Header, Footer, and FormattedDate components are imported from the
+components folder. */
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 
+//type Props is the CollectionEntry type with the 'blog' type. //
 type Props = CollectionEntry<'blog'>['data'];
-
+/* The title, description, pubDate, updatedDate, and heroImage properties are
+extracted from the Astro object and assigned to the title, description, pubDate,
+updatedDate, and heroImage variables. */
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
----
 
+---
 <html lang="en">
 	<head>
+<!-- The BaseHead component is rendered with the title and description properties. -->
 		<BaseHead title={title} description={description} />
 		<style>
 			main {
