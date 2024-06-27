@@ -41,6 +41,21 @@ export default defineConfig({
             required: true,
           },
           {
+            type: "string",
+            name: "description",
+            label: "Description",
+          },
+          {
+            type: "datetime",
+            name: "pubDate",
+            label: "Publication Date",
+          },
+          {
+            type: "image",
+            name: "heroImage",
+            label: "Hero Image",
+          },
+          {
             type: "rich-text",
             name: "body",
             label: "Body",
