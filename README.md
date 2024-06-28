@@ -36,8 +36,5 @@ Check out [our documentation](https://docs.astro.build) or jump into our [Discor
 ## TO DO
 
 -Update Images for blog posts.
--Add tagging system to blog posts
--Add search function on blog posts
--Set Limts to the amout of blogs shown.
--add Tina support ( CMS ).
--add Key protection.
+-Add tagging system to blog posts.
+-Add search function on blog posts.

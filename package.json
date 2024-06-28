@@ -13,7 +13,6 @@
     "@astrojs/mdx": "^3.1.2",
     "@astrojs/rss": "^4.0.7",
     "@astrojs/sitemap": "^3.1.6",
-    "@supabase/supabase-js": "^2.44.1",
     "@tinacms/auth": "^1.0.4",
     "astro": "^4.11.1",
     "tinacms": "^1.6.4",
