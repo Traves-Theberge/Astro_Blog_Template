@@ -5,9 +5,9 @@ pubDate: 2024-07-01T04:00:00.000Z
 heroImage: /blog-standard-background.jpg
 ---
 
-\# Building a Threaded Comment Section with Tailwind CSS and Vanilla JavaScript
+# Building a Threaded Comment Section with Tailwind CSS and Vanilla JavaScript
 
-\## Introduction
+## Introduction
 
 In today's digital world, interactive and user-friendly comment sections are essential for fostering engagement on blogs and websites. One of the most effective ways to achieve this is by implementing a threaded comment section. This allows users to reply directly to comments, creating a nested structure that makes conversations easier to follow. In this blog post, we’ll walk through how to build a threaded comment section using Tailwind CSS and vanilla JavaScript.
 
@@ -15,40 +15,40 @@ In today's digital world, interactive and user-friendly comment sections are ess
 
 To get started, ensure you have a basic HTML structure ready. For this tutorial, we'll be using Tailwind CSS for styling and vanilla JavaScript for functionality.
 
-### HTML Structure
+## HTML Structure
 
 Here’s the basic HTML structure for our comment section:
 
-\`\`\`html
-\<!DOCTYPE html>
-\<html lang="en">
-\<head>
-\<meta charset="UTF-8">
-\<meta name="viewport" content="width=device-width, initial-scale=1.0">
-\<title>Threaded Comment Section\</title>
-\<link href="[https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css](https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css)" rel="stylesheet">
-\</head>
-\<body class="bg-gray-100 p-6">
-\<div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
-\<h1 class="text-2xl font-bold mb-4">Comments\</h1>
-\<div id="comments-container" class="space-y-4">
-\<!-- New Comment Form -->
-\<div class="new-comment-form">
-\<textarea id="new-comment" placeholder="Add a comment..." class="w-full p-2 border rounded-lg">\</textarea>
-\<button onclick="postComment()" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-lg">Post Comment\</button>
-\</div>
-\<!-- Comment Blocks will be dynamically inserted here -->
-\</div>
-\</div>
-\<script src="script.js">\</script>
-\</body>
-\</html>
-
-Styling with Tailwind CSS
-Tailwind CSS simplifies the process of creating a beautiful and responsive layout. Here's how we’ll style our comments:
-
+```
 html
-Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Threaded Comment Section\</title>
+<link href="[https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css](https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css)" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+<div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
+<h1 class="text-2xl font-bold mb-4">Comments\</h1>
+<div id="comments-container" class="space-y-4">
+<!-- New Comment Form -->
+<div class="new-comment-form">
+<textarea id="new-comment" placeholder="Add a comment..." class="w-full p-2 border rounded-lg">\</textarea>
+<button onclick="postComment()" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-lg">Post Comment\</button>
+</div>
+<!-- Comment Blocks will be dynamically inserted here -->
+</div>
+</div>
+<script src="script.js">\</script>
+</body>
+</html>
+```
+
+## Styling with Tailwind CSS
+
+Tailwind CSS simplifies the process of creating a beautiful and responsive layout. Here's how we’ll style our comments:
 
 ```
 <style>
@@ -88,10 +88,11 @@ Copy code
 </style>
 ```
 
-\##JavaScript Functionality
+## JavaScript Functionality
+
 To handle posting comments and replies, we'll use vanilla JavaScript. Below is a basic implementation of our JavaScript functions:
 
-\##JavaScript
+## JavaScript
 
 ```
 const commentsContainer = document.getElementById('comments-container');
