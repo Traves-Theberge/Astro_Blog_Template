@@ -50,6 +50,7 @@ Tailwind CSS simplifies the process of creating a beautiful and responsive layou
 html
 Copy code
 
+```
 <style>
   .comments-container {
     @apply space-y-4;
@@ -85,19 +86,20 @@ Copy code
     @apply mt-4;
   }
 </style>
+```
 
-JavaScript Functionality
+\##JavaScript Functionality
 To handle posting comments and replies, we'll use vanilla JavaScript. Below is a basic implementation of our JavaScript functions:
 
-javascript
-Copy code
+\##JavaScript
+
+```
 const commentsContainer = document.getElementById('comments-container');
 
 function postComment(parentId = null) {
 const newCommentText = document.getElementById('new-comment').value;
 if (newCommentText.trim() === "") return;
 
-```
 const commentBlock = document.createElement('div');
 commentBlock.classList.add('comment-block');
 commentBlock.innerHTML = `
@@ -120,7 +122,6 @@ if (parentId) {
 }
 
 document.getElementById('new-comment').value = '';
-```
 
 }
 
@@ -132,8 +133,12 @@ replyForm.innerHTML = `         <textarea placeholder="Add a reply..." class="w-
 button.parentNode.appendChild(replyForm);
 button.remove();
 }
-Bringing It All Together
+```
+
+## Bringing It All Together
+
 With the HTML, CSS, and JavaScript in place, we now have a functional threaded comment section. Users can post new comments and replies, creating a nested conversation structure.
 
-Conclusion
+## Conclusion
+
 Implementing a threaded comment section enhances user interaction on your site, making conversations easier to follow and more engaging. With Tailwind CSS and vanilla JavaScript, we’ve built a clean, responsive, and efficient comment section. Try integrating this into your projects to see the difference it makes!
