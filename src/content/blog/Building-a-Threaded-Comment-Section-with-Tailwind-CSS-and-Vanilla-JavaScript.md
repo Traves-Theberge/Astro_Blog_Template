@@ -7,8 +7,6 @@ pubDate: 2024-07-01T04:00:00.000Z
 heroImage: /blog-standard-background.jpg
 ---
 
-# Building a Threaded Comment Section with Tailwind CSS and Vanilla JavaScript
-
 ## Introduction
 
 In today's digital world, interactive and user-friendly comment sections are essential for fostering engagement on blogs and websites. One of the most effective ways to achieve this is by implementing a threaded comment section. This allows users to reply directly to comments, creating a nested structure that makes conversations easier to follow. In this blog post, we’ll walk through how to build a threaded comment section using Tailwind CSS and vanilla JavaScript.
