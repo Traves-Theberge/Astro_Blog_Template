@@ -1,6 +1,8 @@
 ---
 title: Building a Threaded Comment Section with Tailwind CSS and Vanilla JavaScript
-description: Building a Threaded Comment Section with Tailwind CSS and Vanilla JavaScript
+description: >-
+  Building a Threaded Comment Section with Tailwind CSS and Vanilla JavaScript
+  with Traves Theberge!
 pubDate: 2024-07-01T04:00:00.000Z
 heroImage: /blog-standard-background.jpg
 ---
