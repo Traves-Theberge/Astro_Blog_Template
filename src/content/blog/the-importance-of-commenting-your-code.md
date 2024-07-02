@@ -1,18 +1,20 @@
 ---
-title: 'The Importance of Commenting Your Code'
-description: 'Commenting Your Code'
-pubDate: 'June, 27, 2024'
-heroImage: '/blog-standard-background.jpg'
+title: The Importance of Commenting Your Code
+description: Commenting Your Code
+pubDate: 2024-06-27T00:00:00.000Z
+heroImage: /Coding.jpg (1).jpg
 ---
+
 ***The Importance of Commenting Your Code***
 
-As a new developer, it's been essential to write clean, readable code. One crucial aspect of achieving this is by commenting your code. 
+As a new developer, it's been essential to write clean, readable code. One crucial aspect of achieving this is by commenting your code.
 
-_"Comments are an integral part of programming, providing context, explanations, and guidance for anyone reading your code, including your future self. Let's explore why commenting is so important and see some practical examples in Astro, JavaScript, and HTML."_
+*"Comments are an integral part of programming, providing context, explanations, and guidance for anyone reading your code, including your future self. Let's explore why commenting is so important and see some practical examples in Astro, JavaScript, and HTML."*
 
-that appears to be true but ***why?**
+that appears to be true but \***why?**
 
 ### Why Commenting is Important
+
 Here are a couple of reasons why!
 
 ***Improves Readability:*** Comments help others (and yourself) understand the code more easily.
@@ -25,14 +27,15 @@ Here are a couple of reasons why!
 
 ***Documents Code:*** Acts as inline documentation for your codebase.
 
-Really, it just helps remind you what you did when you walk away from the project for any amount of time _ask me how i know_.
+Really, it just helps remind you what you did when you walk away from the project for any amount of time *ask me how i know*.
 
 ### Commenting
+
 I'll list a couple of examples of commenting in languages and frameworks i currently use!
 
 ### Commenting in Astro
-Astro is a modern framework for building fast websites. Let's see how to add comments in an Astro component.
 
+Astro is a modern framework for building fast websites. Let's see how to add comments in an Astro component.
 
 ```astro
 ---
@@ -54,6 +57,7 @@ import BlogPost from '../components/BlogPost.astro';
 ```
 
 ### Commenting in JavaScript
+
 JavaScript comments can be single-line or multi-line. Here are examples of both.
 
 ```javascript
@@ -73,6 +77,7 @@ const add = (a, b) => {
 ```
 
 ### Commenting in HTML
+
 HTML comments are useful for explaining the structure of your markup or temporarily disabling code without deleting it.
 
 ```html
@@ -101,7 +106,8 @@ HTML comments are useful for explaining the structure of your markup or temporar
 ```
 
 ### Best Practices for Commenting
-***Be Clear and Concise:*** Write comments that are easy to understand. 
+
+***Be Clear and Concise:*** Write comments that are easy to understand.
 
 ***Explain Why, Not What:*** The code often shows what it does; comments should explain why.
 
@@ -110,8 +116,9 @@ HTML comments are useful for explaining the structure of your markup or temporar
 ***Use Comments Sparingly:*** Avoid over-commenting; only add comments where necessary.
 
 ### Conclusion:
-Commenting your code is a simple yet powerful practice that enhances readability, maintainability, and collaboration. Whether you're working on an Astro project, writing JavaScript functions, or structuring an HTML document, effective comments can make a significant difference. 
 
-_"Start incorporating comments into your code today, and you'll appreciate the benefits in the long run."_
+Commenting your code is a simple yet powerful practice that enhances readability, maintainability, and collaboration. Whether you're working on an Astro project, writing JavaScript functions, or structuring an HTML document, effective comments can make a significant difference.
+
+*"Start incorporating comments into your code today, and you'll appreciate the benefits in the long run."*
 
 ***Happy coding!***
