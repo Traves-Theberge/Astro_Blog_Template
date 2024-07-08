@@ -4,7 +4,7 @@ description: >-
   High-Level Architecture, Detailed Components, Data Flow, Component
   Interactions
 pubDate: 2024-07-08T04:00:00.000Z
-heroImage: /Coding.jpg (1).jpg
+heroImage: /Chatbot.jpg
 ---
 
 Building a robust and efficient chatbot involves understanding and implementing various architectural components. In this blog post, we'll explore the high-level architecture, detailed components, data flow, and component interactions of a chatbot project. We'll also discuss the lessons learned throughout the process.
